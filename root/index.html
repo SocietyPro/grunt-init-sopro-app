@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- {%=title%}-->
+<html>
+  <head>
+    {% 
+    if(soproMaterial){
+    %}
+    <script src="bower_components/sopro-material/js/angular-material.js" type="text/javascript"></script>
+    <link href="bower_components/sopro-material/css/angular-material.css" rel="stylesheet">
+    <link href="bower_components/sopro-material/css/sopro-material.css" rel="stylesheet">
+    {% 
+    }
+    %}
+    
+    {% 
+    if(japi){
+    %}
+    <script src="bower_components/japi/js/japi.js"type="text/javascript"></script>
+    {% 
+    }
+    %}
+
+    {% 
+    if(roboto){
+    %}
+    <link rel="stylesheet" type="text/css" href="bower_components/roboto/2014/roboto-woff.css">
+    {% 
+    }
+    %}
+  </head>
+  <body layout="vertical">
+    <nav layout="horizontal" layout-align="space-around">
+      <div>Society Pro Configuration</div>
+    </nav>
+    <section id="config" flex>
+    <material-input-group>
+      <label> Mute Sounds </label>
+      <material-input>
+      </material-input>
+    </material-input-group>
+    <material-input-group>
+      <label> Set Developer Apps Folder </label>
+      <material-input>
+      </material-input>
+    </material-input-group>
+    </section>
+  </body>
+</html>
